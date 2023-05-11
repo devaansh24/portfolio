@@ -21,7 +21,8 @@ const Banner = () => {
 
   return (
     <motion.div
-      className="max-w-full h-screen flex flex-col justify-center items-center p-20" style={{overflowY:"hidden"}}
+      className="max-w-full min-h-screen flex flex-col justify-center items-center  p-20"
+     
       variants={containerVariants}
       initial="hidden"
       animate="visible"
