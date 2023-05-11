@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 const ProjectCard = ({ projectTitle, imageUrl, projectDescription }) => {
   return (
-    <div className="max-w-md shadow-lg px-4 py-4 m-4">
+    <div className="max-w-md shadow-xl rounded-2xl px-4 py-4 m-4">
       <div>
         <img
           src={imageUrl}
