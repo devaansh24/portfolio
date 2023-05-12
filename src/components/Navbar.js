@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="flex max-w-[32px] display:block justify-start items-start">
         <img src={bannerp} alt="" />
       </div>
-      <ul className="flex justify-center items-center font-mono text-xl p-2 m-2 px-10">
+      <ul className="flex justify-center items-center font-mono text-xl p-2 m-2 px-10 font-extrabold">
         <NavItem to="/about">ABOUT</NavItem>
         <NavItem to="/contacts">CONTACT</NavItem>
         <NavItem to="/projects">PROJECTS</NavItem>

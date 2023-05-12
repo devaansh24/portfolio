@@ -20,7 +20,7 @@ const Banner = () => {
   };
 
   return (
-    <section className="flex  justify center sm:max-w-full sm:justify-center lg:max-w-full md:justify-center md:max-w-full lg:justify-center bg-gradient-to-r from-cyan-100 to-blue-100 ">
+    <section className="flex  justify center sm:max-w-full sm:justify-center lg:max-w-full md:justify-center md:max-w-full lg:justify-center bg-gradient-to-r from-slate-200 to-blue-200 ">
       <motion.div
         className="max-w-full min-h-screen flex flex-col justify-center items-center p-6 md:p-20 text-center"
         variants={containerVariants}
