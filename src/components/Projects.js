@@ -4,7 +4,7 @@ import projectData from "../utils/projectsdata";
 
 const Projects = () => {
   return (
-    <div className="bg-gradient-to-r from-cyan-200 to-blue-200 ">
+    <div className="bg-gradient-to-r from-cyan-100 to-blue-100 ">
       <div className="py-4 shadow-lg rounded-lg p-4 flex flex-wrap justify-center  ">
         {projectData.map((item) => (
           <ProjectCard
