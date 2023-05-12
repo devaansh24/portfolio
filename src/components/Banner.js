@@ -31,10 +31,10 @@ const Banner = () => {
           className="text-base md:text-lg font-mono"
           variants={textVariants}
         >
-          Hello, My name is
+          Hello,My name is
         </motion.p>
         <motion.h1
-          className="font-mono text-2xl md:text-4xl py-2"
+          className="font-mono text-3xl md:text-4xl py-2 text-blue-600 "
           variants={textVariants}
         >
           DEVANSH SHARMA.
@@ -54,8 +54,8 @@ const Banner = () => {
           className="text-base md:text-lg font-mono"
           variants={textVariants}
         >
-          I am a software engineer, expert in building user-friendly and
-          efficient components
+          I am a software developer."Driven by curiosity, powered by code,
+          dedicated to delivering excellence."
         </motion.p>
         <div className="flex flex-col md:flex-row mt-4 gap-6 py-6 items-center justify-center">
           <Link to="/projects">
