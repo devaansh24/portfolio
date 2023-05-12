@@ -13,7 +13,7 @@ const Navbar = () => {
         <NavItem to="/contacts">CONTACT</NavItem>
         <NavItem to="/projects">PROJECTS</NavItem>
         <NavItem
-          to="https://drive.google.com/file/d/185DHjNCGzu59mmbCjLv4EZ9wqCG1fnep/view?usp=sharing"
+          to="https://drive.google.com/file/d/1rd8Qazp6LGKG_h7pvuYFzl47ILSlNLdL/view?usp=sharing"
           download
         >
           RESUME
