@@ -13,7 +13,9 @@ const Projects = () => {
           <ProjectCard
             key={item.id}
             imageUrl={item.imageUrl}
-            projectTitle={item.projectTitle}
+                projectTitle={item.projectTitle}
+                githubUrl={item.githubUrl}
+                liveUrl={item.liveUrl}
           />
         ))}
       </div>

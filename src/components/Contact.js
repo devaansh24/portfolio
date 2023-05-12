@@ -7,7 +7,7 @@ import instagram from "../utils/icons-images/instagram.png";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col md:flex-row max-w-full mx-4 md:mx-20 h-screen font-mono p-2">
+    <div className="flex flex-col justify-center items-center md:flex-row max-w-full mx-4 md:mx-20 h-screen font-mono p-2">
       <div className="flex flex-col justify-center p-4 m-4">
         <h1 className="text-4xl py-4">Let's Chat.</h1>
         <h1 className="text-2xl py-2">Tell me about your project</h1>
@@ -18,7 +18,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="p-4 m-4 ml-auto flex flex-col justify-center">
+      <div className="p-4 m-4 ml-auto flex flex-col justify-center items-center">
         <h1 className="flex items-center justify-center">Social Media</h1>
 
         <div className="flex space-x-2 py-2">

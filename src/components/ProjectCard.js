@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-const ProjectCard = ({ projectTitle, imageUrl, projectDescription }) => {
+import { Link } from "react-router-dom";
+const ProjectCard = ({ projectTitle, imageUrl, projectDescription ,githubUrl,liveUrl }) => {
   return (
     <div className="max-w-md shadow-xl rounded-2xl px-4 py-4 m-4">
       <div>
@@ -15,22 +16,26 @@ const ProjectCard = ({ projectTitle, imageUrl, projectDescription }) => {
         <p>{projectDescription}</p>
       </div>
       <div className="flex justify-around px-4 py-4">
-        <motion.button
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none w-32 h-10 font-mono"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ duration: 0.2 }}
-        >
-          LIVE
-        </motion.button>
-        <motion.button
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none w-32 h-10 font-mono"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ duration: 0.2 }}
-        >
-          GITHUB
-        </motion.button>
+       <a href={liveUrl} target="_blank" rel="noopener noreferrer"> 
+          <motion.button
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none w-32 h-10 font-mono"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ duration: 0.2 }}
+          >
+            LIVE
+          </motion.button>
+        </a>
+        <a href={githubUrl}>
+          <motion.button
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none w-32 h-10 font-mono"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ duration: 0.2 }}
+          >
+            GITHUB
+          </motion.button>
+        </a>
       </div>
     </div>
   );
