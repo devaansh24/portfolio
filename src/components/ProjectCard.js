@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 const ProjectCard = ({ projectTitle, imageUrl, projectDescription ,githubUrl,liveUrl }) => {
   return (
-    <div className="max-w-md shadow-xl rounded-2xl px-4 py-4 m-4">
+    <div className="max-w-md shadow-xl rounded-2xl px-4 py-4 m-4 font-mono">
       <div>
         <img
           src={imageUrl}

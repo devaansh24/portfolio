@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import bannerp from "../utils/icons-images/bannerp.png";
+import bannerp from "../utils/icons-images/bannerp.svg";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
@@ -20,14 +20,17 @@ const Banner = () => {
   };
 
   return (
-    <section className="flex  justify center sm:max-w-full sm:justify-center lg:max-w-full md:justify-center md:max-w-full lg:justify-center ">
+    <section className="flex  justify center sm:max-w-full sm:justify-center lg:max-w-full md:justify-center md:max-w-full lg:justify-center bg-gradient-to-r from-cyan-200 to-blue-200 ">
       <motion.div
         className="max-w-full min-h-screen flex flex-col justify-center items-center p-6 md:p-20 text-center"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        <motion.p className="text-base md:text-lg" variants={textVariants}>
+        <motion.p
+          className="text-base md:text-lg font-mono"
+          variants={textVariants}
+        >
           Hello, My name is
         </motion.p>
         <motion.h1
@@ -37,17 +40,20 @@ const Banner = () => {
           DEVANSH SHARMA.
         </motion.h1>
         <motion.div className="flex items-center" variants={textVariants}>
-          <motion.h2 className="py-4 text-xl md:text-4xl">
+          <motion.h2 className="py-4 text-xl md:text-4xl font-mono">
             I BUILD THINGS FOR WEB
           </motion.h2>
           <motion.div
             className="max-w-[72px] flex justify-center items-center ml-auto"
             variants={imageVariants}
           >
-            <img src={bannerp} alt="" />
+            <img className="px-4" src={bannerp} alt="" />
           </motion.div>
         </motion.div>
-        <motion.p className="text-base md:text-lg" variants={textVariants}>
+        <motion.p
+          className="text-base md:text-lg font-mono"
+          variants={textVariants}
+        >
           I am a software engineer, expert in building user-friendly and
           efficient components
         </motion.p>
